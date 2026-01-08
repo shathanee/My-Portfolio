@@ -1,0 +1,170 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* background-color: rgba(8, 9, 9, 0.9); */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    /* Increased from 1rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.navbar-logo span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-logo-hexagon {
+    width: 42px;
+    height: 46px;
+    background: var(--gradient);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 2px;
+    /* Border thickness */
+}
+
+/* Inner cutout for outline effect */
+.navbar-logo-hexagon::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: var(--bg-primary);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 1;
+}
+
+.navbar-logo-icon {
+    font-size: 1.1rem;
+    color: var(--accent);
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-logo:hover .navbar-logo-hexagon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #646cff;
+}
+
+/* Theme Toggle Button - Small Icon */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e9be24;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* Light Theme Styles */
+.light-theme .navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .navbar-link {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.light-theme .navbar-link:hover {
+    color: #646cff;
+}
+
+.light-theme .theme-toggle {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #1a1a2e;
+}
+
+.light-theme .theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-right {
+        gap: 1rem;
+    }
+
+    .navbar-menu {
+        gap: 0.75rem;
+    }
+
+    .navbar-link {
+        font-size: 0.85rem;
+    }
+
+    .theme-toggle {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+}

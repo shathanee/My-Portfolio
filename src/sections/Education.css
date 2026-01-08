@@ -1,0 +1,131 @@
+.education {
+    width: 100%;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.education-container {
+    max-width: 900px;
+    /* Matching About Me width */
+    max-height: max-content;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section Header */
+.education-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.education-heading {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    margin: 0;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Education List (Rows) */
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    /* Centered narrow list */
+}
+
+.education-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateX(10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(100, 108, 255, 0.1);
+}
+
+.education-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(100, 108, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.education-card:hover .education-icon {
+    background: var(--gradient);
+    color: #fff;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-degree {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    color: var(--accent);
+}
+
+.education-institution {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem;
+    font-weight: 600;
+}
+
+.education-duration {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: block;
+}
+
+.education-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .education-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}

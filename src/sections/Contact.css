@@ -1,0 +1,142 @@
+.contact {
+    width: 100%;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-container {
+    max-width: 900px;
+    /* Matching About Me width */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-heading {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    margin: 0;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-subtext {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact List (3 Rows) */
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 600px;
+    /* Increased from 600px */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card:hover {
+    transform: translateX(10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(100, 108, 255, 0.1);
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(100, 108, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.contact-card:hover .contact-icon {
+    background: var(--gradient);
+    color: #fff;
+}
+
+.contact-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin: 0;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    word-break: break-all;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.contact-card:hover .contact-value {
+    color: var(--accent);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .contact-card {
+        padding: 1rem 1.5rem;
+        gap: 1.25rem;
+    }
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .contact-value {
+        font-size: 1rem;
+    }
+}
