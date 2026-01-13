@@ -21,20 +21,18 @@
     align-items: center;
 }
 
-display: flex;
-align-items: center;
-gap: 0.75rem;
-font-size: 1.25rem;
-font-weight: 700;
-color: var(--text-primary);
-text-decoration: none;
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
 .navbar-logo span {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: black;
 }
 
 .navbar-logo-hexagon {
@@ -90,7 +88,7 @@ text-decoration: none;
 }
 
 .navbar-link {
-    color: rgba(0, 0, 0, 0.7);
+    color: black;
     font-weight: 500;
     transition: color 0.3s ease;
 }
