@@ -13,7 +13,7 @@ const Education = () => {
         },
         {
             id: 2,
-            icon: <FaGraduationCap />,
+            icon: <FaCertificate />,
             degree: "Higher National Diploma in Business Management",
             institution: "Esoft University Jaffna",
             duration: "2025 - 2027",

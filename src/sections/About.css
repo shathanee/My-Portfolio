@@ -54,36 +54,7 @@
     max-width: 800px;
 }
 
-/* CTA Button */
-.about-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 2.5rem;
-    background: var(--gradient);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    width: fit-content;
-    margin-top: 1rem;
-}
 
-.about-cta:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(100, 108, 255, 0.4);
-    color: #fff;
-}
-
-.about-cta-arrow {
-    transition: transform 0.3s ease;
-}
-
-.about-cta:hover .about-cta-arrow {
-    transform: translateX(5px);
-}
 
 @media (max-width: 600px) {
     .about-intro-text {
@@ -93,4 +64,55 @@
     .about-background-text {
         font-size: 1rem;
     }
+
+    .about-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Button Styling (Mirrored from Hero) */
+.about-buttons {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.about-btn.primary {
+    background: var(--gradient);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.about-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.about-btn.secondary {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--text-primary);
+}
+
+.about-btn.secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background-color: rgba(59, 130, 246, 0.05);
 }

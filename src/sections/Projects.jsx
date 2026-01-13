@@ -1,31 +1,32 @@
+import { FaGithub } from "react-icons/fa";
 import "./Projects.css";
 
 const Projects = () => {
     const projectsData = [
         {
             id: 1,
-            title: "E-Commerce Platform",
+            title: "Restuarant Management System",
             description: "A full-featured online store with payment integration and admin dashboard.",
-            image: "/src/assets/project_1.png", // Paths will be adjusted after image generation
-            tags: ["React", "Node.js", "MongoDB"],
-            link: "#",
+            image: "/src/assets/images/Restuarant.png", // Paths will be adjusted after image generation
+            tags: ["React", "SpringBoot", "MySQL"],
+            link: "",
         },
         {
             id: 2,
-            title: "Task Management App",
+            title: " Creative Portfolio",
             description: "A productivity tool for managing tasks with a drag-and-drop Kanban board.",
-            image: "/src/assets/project_2.png",
-            tags: ["React", "Firebase", "Tailwind"],
-            link: "#",
+            image: "/src/assets/images/porfolio.png",
+            tags: ["React", "Tailwind"],
+            link: "https://github.com/Asviny/My-Portfolio.git",
         },
-        {
-            id: 3,
-            title: "Creative Portfolio",
-            description: "A minimalist portfolio for designers and developers to showcase their work.",
-            image: "/src/assets/project_3.png",
-            tags: ["React", "Framer Motion", "CSS"],
-            link: "#",
-        },
+        // {
+        //     id: 3,
+        //     title: "Creative Portfolio",
+        //     description: "A minimalist portfolio for designers and developers to showcase their work.",
+        //     image: "/src/assets/project_3.png",
+        //     tags: ["React", "Framer Motion", "CSS"],
+        //     link: "#",
+        // },
     ];
 
     return (
@@ -41,7 +42,9 @@ const Projects = () => {
                             <div className="project-image-wrapper">
                                 <img src={project.image} alt={project.title} className="project-image" />
                                 <div className="project-overlay">
-                                    <a href={project.link} className="project-link-btn">View Project</a>
+                                    <a href={project.link} className="project-link-btn" target="_blank" rel="noopener noreferrer">
+                                        <FaGithub /> View Project
+                                    </a>
                                 </div>
                             </div>
                             <div className="project-info">

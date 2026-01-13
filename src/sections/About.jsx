@@ -5,7 +5,7 @@ const About = () => {
         heading: "About Me",
         intro: `I’m a dedicated Backend Developer focused on building secure, scalable, and high-performance applications. I enjoy solving complex problems and creating reliable systems that power modern web applications..`,
         ctaText: "Download CV",
-        ctaLink: "/resume.pdf",
+        ctaLink: "/src/assets/pdf/White simple Sales Representative Cv Resume (2).pdf",
     };
 
     return (
@@ -19,10 +19,14 @@ const About = () => {
                     <p className="about-intro-text">{aboutContent.intro}</p>
                     <p className="about-background-text">{aboutContent.background}</p>
 
-                    <a href={aboutContent.ctaLink} className="about-cta" download>
-                        {aboutContent.ctaText}
-                        <span className="about-cta-arrow">→</span>
-                    </a>
+                    <div className="about-buttons">
+                        <a href="/src/assets/pdf/White simple Sales Representative Cv Resume (2).pdf" className="about-btn primary" download>
+                            Download CV
+                        </a>
+                        <a href="/src/assets/pdf/White simple Sales Representative Cv Resume (2).pdf" className="about-btn secondary" target="_blank" rel="noopener noreferrer">
+                            View CV
+                        </a>
+                    </div>
                 </div>
             </div>
         </article>
