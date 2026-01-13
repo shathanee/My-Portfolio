@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import "./Projects.css";
 import ProjectImg1 from "../assets/images/Restuarant.png";
-import ProjectImg2 from "../assets/images/portfolio.png";
+import ProjectImg2 from "../assets/images/porfolio.png";
 
 const Projects = () => {
     const projectsData = [
