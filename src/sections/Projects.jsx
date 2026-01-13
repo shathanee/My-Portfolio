@@ -29,6 +29,7 @@ const Projects = () => {
         //     tags: ["React", "Framer Motion", "CSS"],
         //     link: "#",
         // },
+        
     ];
 
     return (

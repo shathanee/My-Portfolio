@@ -14,6 +14,7 @@ const Navbar = () => {
         { name: "Projects", url: "#projects" },
         { name: "Contact", url: "#contact" },
     ];
+    
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

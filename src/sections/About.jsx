@@ -8,6 +8,7 @@ const About = () => {
         ctaLink: "/src/assets/pdf/White simple Sales Representative Cv Resume (2).pdf",
     };
 
+    
     return (
         <article className="about">
             <div className="about-container">
