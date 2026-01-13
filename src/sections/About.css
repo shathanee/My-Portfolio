@@ -56,25 +56,7 @@
 
 
 
-@media (max-width: 600px) {
-    .about-intro-text {
-        font-size: 1.1rem;
-    }
 
-    .about-background-text {
-        font-size: 1rem;
-    }
-
-    .about-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .about-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
 
 /* Button Styling (Mirrored from Hero) */
 .about-buttons {
@@ -115,4 +97,24 @@
     border-color: var(--accent);
     color: var(--accent);
     background-color: rgba(59, 130, 246, 0.05);
+}
+
+@media (max-width: 576px) {
+    .about-intro-text {
+        font-size: 1.1rem;
+    }
+
+    .about-background-text {
+        font-size: 1rem;
+    }
+
+    .about-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-btn {
+        width: 100%;
+        text-align: center;
+    }
 }

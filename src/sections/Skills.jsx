@@ -1,32 +1,32 @@
-import { FaCode, FaServer, FaLightbulb, FaRocket, FaPaintRoller, FaProjectDiagram, FaGit, FaGithub } from "react-icons/fa";
+import { FaCode, FaServer, FaLightbulb, FaRocket, FaPaintRoller, FaProjectDiagram, FaGit, FaGithub, FaBusinessTime, FaPaintBrush } from "react-icons/fa";
 import "./Skills.css";
 
 const Skills = () => {
     const skillsData = [
-       
+
         {
             icon: <FaServer />,
             title: "Backend Development",
-            description: "Building robust REST APIs and server-side applications with JAVA ,Spring Boot, and databases like MongoDB and MySQL.",
+            description: "Building robust REST APIs and server-side applications with Java, Spring Boot, and databases like MongoDB and MySQL.",
         },
-         {
+        {
             icon: <FaCode />,
             title: "Frontend Development",
             description: "Creating responsive, accessible, and performant user interfaces with React, TypeScript, and modern CSS.",
         },
-         {
+        {
             icon: <FaGithub />,
             title: "Version Control",
             description: "Experienced in using Git and GitHub to manage code, track changes, and collaborate effectively.",
         },
         {
-            icon: <FaProjectDiagram />,
+            icon: <FaBusinessTime/>,
             title: "Management",
             description: "Understanding of HR, project, and marketing management concepts gained through academic research.",
         },
-        
+
         {
-            icon: <FaPaintRoller/>,
+            icon: <FaPaintBrush />,
             title: "Canva Design",
             description: "Creating simple and effective visual designs for academic and research presentations using Canva.",
         },

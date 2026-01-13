@@ -165,6 +165,22 @@
     border: 1px solid rgba(100, 108, 255, 0.2);
 }
 
+.mobile-project-btn {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--gradient);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .project-card {
@@ -185,5 +201,13 @@
 
     .project-tags {
         justify-content: center;
+    }
+
+    .mobile-project-btn {
+        display: flex;
+    }
+
+    .project-overlay {
+        display: none;
     }
 }

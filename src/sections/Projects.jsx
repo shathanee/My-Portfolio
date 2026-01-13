@@ -29,7 +29,7 @@ const Projects = () => {
         //     tags: ["React", "Framer Motion", "CSS"],
         //     link: "#",
         // },
-        
+
     ];
 
     return (
@@ -58,6 +58,9 @@ const Projects = () => {
                                         <span key={index} className="project-tag">{tag}</span>
                                     ))}
                                 </div>
+                                <a href={project.link} className="mobile-project-btn" target="_blank" rel="noopener noreferrer">
+                                    <FaGithub /> View Project
+                                </a>
                             </div>
                         </div>
                     ))}
