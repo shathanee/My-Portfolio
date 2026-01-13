@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaCode, FaBars, FaTimes } from "react-icons/fa";
+import { FaCode, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -40,6 +40,11 @@ const Navbar = () => {
 
                 <div className="navbar-right">
                     <ul className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
+                        <li className="mobile-only-close">
+                            <button className="sidebar-close-btn" onClick={closeMobileMenu}>
+                                <FaArrowRight />
+                            </button>
+                        </li>
                         {navLinks.map((link) => (
                             <li key={link.name}>
                                 <a href={link.url} className="navbar-link" onClick={closeMobileMenu}>
