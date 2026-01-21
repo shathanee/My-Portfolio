@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaCode, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
 import "./Navbar.css";
+import React from "react";
 
 const Navbar = () => {
 

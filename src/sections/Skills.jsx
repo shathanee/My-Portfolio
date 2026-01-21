@@ -1,5 +1,6 @@
 import { FaCode, FaServer, FaLightbulb, FaRocket, FaPaintRoller, FaProjectDiagram, FaGit, FaGithub, FaBusinessTime, FaPaintBrush } from "react-icons/fa";
 import "./Skills.css";
+import React from "react";
 
 const Skills = () => {
     const skillsData = [

@@ -1,5 +1,7 @@
 import "./About.css";
-import Resume from "../assets/pdf/Asviny Kunasingam.pdf";
+import Resume from "../assets/pdf/Asviny Kunasingam (3).pdf";
+import React from "react";
+
 const About = () => {
     const aboutContent = {
         heading: "About Me",

@@ -1,5 +1,6 @@
 import { FaBriefcase, FaCode, FaLaptopCode } from "react-icons/fa";
 import "./Experience.css";
+import React from "react";
 
 const Experience = () => {
     const experienceData = [

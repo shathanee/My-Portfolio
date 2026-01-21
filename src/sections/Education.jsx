@@ -1,5 +1,6 @@
 import { FaGraduationCap, FaSchool, FaCertificate } from "react-icons/fa";
 import "./Education.css";
+import React from "react";
 
 const Education = () => {
     const educationData = [
