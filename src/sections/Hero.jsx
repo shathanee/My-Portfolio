@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroImg from "../assets/images/as.jpg"
+import heroImg from "../assets/images/nan.jpeg"
 import Resume from "../assets/pdf/Shathanee-B-Resume-.pdf";
 import React from "react";
 

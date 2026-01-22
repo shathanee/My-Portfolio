@@ -1,6 +1,6 @@
 import "./About.css";
 import Resume from "../assets/pdf/Shathanee-B-Resume-.pdf";
-import aboutImg from "../assets/images/as.jpg";
+import aboutImg from "../assets/images/sathu.jpeg";
 import React from "react";
 
 const About = () => {
