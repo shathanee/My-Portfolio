@@ -4,9 +4,9 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(13, 11, 20, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(188, 122, 255, 0.08);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .navbar-logo span {
-    color: black;
+    color: var(--text-primary);
 }
 
 .navbar-logo-hexagon {
@@ -88,13 +88,13 @@
 }
 
 .navbar-link {
-    color: black;
+    color: var(--text-primary);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
-    color: #646cff;
+    color: var(--accent);
 }
 
 

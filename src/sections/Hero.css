@@ -75,12 +75,12 @@
 .hero-btn.primary {
     background: var(--gradient);
     color: #fff;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(188, 122, 255, 0.25);
 }
 
 .hero-btn.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 8px 30px rgba(188, 122, 255, 0.35);
 }
 
 .hero-btn.secondary {
@@ -92,7 +92,7 @@
 .hero-btn.secondary:hover {
     border-color: var(--accent);
     color: var(--accent);
-    background-color: rgba(59, 130, 246, 0.05);
+    background-color: rgba(188, 122, 255, 0.08);
 }
 
 /* Image Styling */

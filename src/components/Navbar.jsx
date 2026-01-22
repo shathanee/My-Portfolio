@@ -33,9 +33,6 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <a href="#home" className="navbar-logo" onClick={closeMobileMenu}>
-                    <div className="navbar-logo-hexagon">
-                        <FaCode className="navbar-logo-icon" />
-                    </div>
                     <span>Portfolio</span>
                 </a>
 

@@ -6,21 +6,21 @@ const Contact = () => {
     const contactInfo = [
         {
             id: 1,
-            icon: <FaEnvelope />,
+            icon: <FaEnvelope style={{ color: "#D14836" }} />,
             label: "Email",
-            value: "asvinyksingam@gmail.com",
-            link: "mailto:asvinyksingam@gmail.com",
+            value: "shathanee2002@gmail.com",
+            link: "mailto:shathanee2002@gmail.com",
         },
         {
             id: 2,
-            icon: <FaPhone />,
+            icon: <FaPhone style={{ color: "#25D366" }} />,
             label: "Phone",
-            value: "+94 74 117 6343",
-            link: "tel:+94741176343",
+            value: "+94 76 979 4547",
+            link: "tel:+94769794547",
         },
         {
             id: 3,
-            icon: <FaMapMarkerAlt />,
+            icon: <FaMapMarkerAlt style={{ color: "#EA4335" }} />,
             label: "Location",
             value: "Jaffna, Sri Lanka",
             link: "https://maps.google.com/?q=Jaffna,Sri+Lanka",

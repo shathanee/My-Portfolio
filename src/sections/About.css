@@ -30,91 +30,72 @@
     background-clip: text;
 }
 
-/* Centered Content */
-.about-content-centered {
+/* Boxed Content */
+.about-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+    text-align: left;
+}
+
+.about-image-wrapper {
+    flex-shrink: 0;
+}
+
+.about-profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 20px rgba(188, 122, 255, 0.2);
+}
+
+.about-text-content {
+    flex: 1;
 }
 
 .about-intro-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-primary);
     margin: 0;
-    max-width: 800px;
 }
 
 .about-background-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--text-muted);
-    margin: 0;
-    max-width: 800px;
+    margin-top: 1rem;
 }
 
-
-
-
-
-/* Button Styling (Mirrored from Hero) */
-.about-buttons {
-    display: flex;
-    gap: 1.25rem;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.about-btn {
-    padding: 0.8rem 2rem;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.about-btn.primary {
-    background: var(--gradient);
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-}
-
-.about-btn.primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-}
-
-.about-btn.secondary {
-    background: transparent;
-    border: 2px solid var(--border);
-    color: var(--text-primary);
-}
-
-.about-btn.secondary:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background-color: rgba(59, 130, 246, 0.05);
-}
-
-@media (max-width: 576px) {
-    .about-intro-text {
-        font-size: 1.1rem;
-    }
-
-    .about-background-text {
-        font-size: 1rem;
-    }
-
-    .about-buttons {
+@media (max-width: 768px) {
+    .about-box {
         flex-direction: column;
-        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
     }
 
-    .about-btn {
-        width: 100%;
-        text-align: center;
+    .about-profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-box {
+        padding: 1.5rem;
+    }
+
+    .about-intro-text {
+        font-size: 1rem;
     }
 }

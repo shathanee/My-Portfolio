@@ -1,17 +1,17 @@
 :root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f7;
-  --text-primary: #1a1a2e;
-  --text-muted: #555566;
-  --accent: #2563eb;
-  /* Deeper Blue for Light Theme contrast */
-  --accent-hover: #1d4ed8;
-  --border: rgba(0, 0, 0, 0.1);
-  --gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-  --card-bg: #f5f5f7;
+  --bg-primary: #0D0B14;
+  --bg-secondary: #151221;
+  --text-primary: #FFFFFF;
+  --text-muted: #A19BA8;
+  --accent: #BC7AFF;
+  /* Radiant Purple accent */
+  --accent-hover: #D1A3FF;
+  --border: rgba(188, 122, 255, 0.15);
+  --gradient: linear-gradient(135deg, #7C6AFF 0%, #BC7AFF 100%);
+  --card-bg: #1A172E;
   --font-heading: 'Manrope', sans-serif;
   --font-body: 'Inter', sans-serif;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html {

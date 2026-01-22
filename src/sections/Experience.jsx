@@ -6,7 +6,7 @@ const Experience = () => {
     const experienceData = [
         {
             id: 1,
-            icon: <FaBriefcase />,
+            icon: <FaBriefcase style={{ color: "#8B572A" }} />,
             role: "Backend developer - Intern",
             company: "Samuel Gnanam IT center.",
             duration: "Sep 2025 - Present",

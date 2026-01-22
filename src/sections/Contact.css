@@ -70,28 +70,26 @@
 }
 
 .contact-card:hover {
-    transform: translateX(10px);
+    transform: translateX(8px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(100, 108, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(188, 122, 255, 0.12);
 }
 
 .contact-icon {
     font-size: 1.8rem;
-    color: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: rgba(100, 108, 255, 0.1);
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
     transition: all 0.3s ease;
     flex-shrink: 0;
 }
 
 .contact-card:hover .contact-icon {
-    background: var(--gradient);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .contact-info-text {

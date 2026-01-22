@@ -57,9 +57,9 @@
 }
 
 .project-card:hover {
-    transform: translateX(10px);
+    transform: translateX(8px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(100, 108, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(188, 122, 255, 0.12);
 }
 
 /* Image Wrapper */
@@ -159,10 +159,10 @@
 .project-tag {
     font-size: 0.7rem;
     padding: 0.2rem 0.6rem;
-    background: rgba(100, 108, 255, 0.1);
+    background: rgba(188, 122, 255, 0.08);
     color: var(--accent);
     border-radius: 20px;
-    border: 1px solid rgba(100, 108, 255, 0.2);
+    border: 1px solid rgba(188, 122, 255, 0.15);
 }
 
 .mobile-project-btn {

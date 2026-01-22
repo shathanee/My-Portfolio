@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaSchool, FaCertificate } from "react-icons/fa";
+import { FaUserGraduate, FaSchool, FaCertificate } from "react-icons/fa";
 import "./Education.css";
 import React from "react";
 
@@ -6,19 +6,19 @@ const Education = () => {
     const educationData = [
         {
             id: 1,
-            icon: <FaGraduationCap />,
-            degree: "Bachelor of Information Technology",
-            institution: "University of Colombo School of Computing",
-            duration: "2023 - Present (2027)",
-            description: "UCSC undergraduate passionate about backend development and web technologies.",
+            icon: <FaUserGraduate style={{ color: "#4A90E2" }} />,
+            degree: "BSc(Hons) Software Engineering",
+            institution: "International College of Business and Technology",
+            duration: "2025 - Present (2026)",
+            description: "Currently pursuing BSc(Hons) Software Engineering by Cardiff Metropolitan University at ICBT Campus.",
         },
         {
             id: 2,
-            icon: <FaCertificate />,
-            degree: "Higher National Diploma in Business Management",
-            institution: "Esoft University Jaffna",
-            duration: "2025 - Present (2027)",
-            description: "Currently pursuing Pearson BTEC Level 5 HND in Business Management.",
+            icon: <FaCertificate style={{ color: "#F5A623" }} />,
+            degree: "Higher Diploma in Computing and Software Engineering",
+            institution: "International College of Business and Technology",
+            duration: "2024 - 2025",
+            description: "Completed the HD in Computing awarded by Cardiff Metropolitan University at ICBT Campus.",
         },
         // {
         //     id: 3,

@@ -1,5 +1,6 @@
 import "./About.css";
-import Resume from "../assets/pdf/Asviny Kunasingam (3).pdf";
+import Resume from "../assets/pdf/Shathanee-B-Resume-.pdf";
+import aboutImg from "../assets/images/as.jpg";
 import React from "react";
 
 const About = () => {
@@ -7,10 +8,10 @@ const About = () => {
         heading: "About Me",
         intro: `I’m a dedicated Backend Developer focused on building secure, scalable, and high-performance applications. I enjoy solving complex problems and creating reliable systems that power modern web applications..`,
         ctaText: "Download CV",
-        ctaLink: {Resume},
+        ctaLink: { Resume },
     };
 
-    
+
     return (
         <article className="about">
             <div className="about-container">
@@ -18,17 +19,13 @@ const About = () => {
                     <h2 className="about-heading">{aboutContent.heading}</h2>
                 </header>
 
-                <div className="about-content-centered">
-                    <p className="about-intro-text">{aboutContent.intro}</p>
-                    <p className="about-background-text">{aboutContent.background}</p>
-
-                    <div className="about-buttons">
-                        <a href={Resume} className="about-btn primary" download>
-                            Download CV
-                        </a>
-                        <a href={Resume}className="about-btn secondary" target="_blank" rel="noopener noreferrer">
-                            View CV
-                        </a>
+                <div className="about-box">
+                    <div className="about-image-wrapper">
+                        <img src={aboutImg} alt="Shathanee Balasubramaniyam" className="about-profile-img" />
+                    </div>
+                    <div className="about-text-content">
+                        <p className="about-intro-text">{aboutContent.intro}</p>
+                        <p className="about-background-text">{aboutContent.background}</p>
                     </div>
                 </div>
             </div>
